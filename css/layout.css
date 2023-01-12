@@ -46,6 +46,8 @@ h1{
     font-size: 40px;
     text-align: center;
 }
+
+
 .honeycard{
     border-radius: 50px;
     display: flex;
@@ -94,14 +96,15 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width:86%;
     margin: 0 auto;
 }
 .deliciouscard img{
     width:100%
 }
 
-@media screen and (min-width:576px) and (max-width:768px){
+
+
+@media screen and (min-width:576px){
     body{
         margin: 0;
     }
@@ -127,9 +130,19 @@ h2{
     }
     .honeycard:last-of-type{
         opacity: 0;
-        width:0
+        width: 0;
+        order: 1;
+    }
+    h1,h2{
+        margin-left: 20px;
     }
 }
+
+
+@media screen and (min-width: 769px){
+
+}
+
 
 @media screen and (min-width:1200px){
     .deliciouscard{
